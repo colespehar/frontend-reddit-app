@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-
 import Article from './components/Article';
 
 function App() {
@@ -85,10 +84,8 @@ function App() {
       <header>
         <input className="subreddit_input" onChange={e => setSubreddit(e.target.value)} value={subreddit} />
 
-        <div className="favsButton">
+        <div className="buttons">
           <input type="button" onClick={favourites} value="Favourites" />
-        </div>
-        <div className="removeFavs">
           <input type="button" onClick={removeFavourites} value="Remove All" />
         </div>
 

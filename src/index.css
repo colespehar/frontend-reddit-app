@@ -13,6 +13,7 @@ header {
 }
 
 header .subreddit_input {
+  text-shadow: 2px 2px 5px black;
   display: inline-block;
   color: #F3F3F3;
   font-size: 32px;
@@ -25,7 +26,31 @@ header .subreddit_input {
   appearance: none;
 }
 
+input[type=button] {
+  cursor: pointer;
+  margin: 5px;
+  font-weight: 700;
+  border-radius: 100rem;
+  font-family: 'Avenir Next';
+  font-size: 1rem;
+  padding: .5rem 3rem;
+  color: black;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #78e4ff, #ff48fa);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+}
+
+input[type=button]:hover {
+  box-shadow: none;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+
 header:before {
+  text-shadow: 2px 2px 5px black;
   content: "/r/";
   display: inline-block;
   color: #F3F3F3;
@@ -34,6 +59,11 @@ header:before {
   font-style: italic;
   text-transform: uppercase;
   text-align: center;
+}
+
+input[type=checkbox] {
+  height: 25px;
+  width: 25px;
 }
 
 .articles article {
@@ -59,5 +89,6 @@ header:before {
 }
 
 .articles article:hover h3 {
+  text-shadow: 1px 1px 3px black;
   color: #FFF;
 }

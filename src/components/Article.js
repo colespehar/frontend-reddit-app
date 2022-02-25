@@ -37,10 +37,12 @@ function Article(props) {
 
   return (
     <article>
-      <a href={ base_url + props.article.permalink } target="_blank">
-        <h3>{ props.article.title }</h3>
-      </a>
-
+        <a href={ base_url + props.article.permalink } target="_blank">
+            <h3>{ props.article.title }</h3>
+        </a>
+        <br></br>
+        <h4>Score: {props.article.score} </h4>
+        <br></br>
       <input type="checkbox" onClick={favs}/>
 
     </article>
